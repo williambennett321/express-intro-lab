@@ -1,0 +1,15 @@
+<body>
+  <h1>Students</h1>
+  <% if(err) { %>
+    <h2><%= err %></h2>
+  <% } %>
+  <ul>
+    <% students.forEach(function(students) { %>
+      <li>
+        <%= students.name %>
+          - 
+        <%= students.enjoysMovies ? "I enjoy movies!" : "I don't enjoy movies" %>
+      </li>
+    <% }) %>
+  </ul>
+</body>
